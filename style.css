@@ -1,0 +1,134 @@
+
+*,
+*::before,
+*::after{
+   margin: 0;
+   padding: 0%;
+   box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+}
+
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(rgb(182, 74, 92), rgb(249, 252, 249)); */
+    background-color: #f8f4f4;
+    display: grid;
+    place-items: center;
+    /* background-image:url('img/a.jpg') ; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.1rem solid #ececec;
+    box-shadow: -0.1rem -0.1rem 1.5rem rgba(255,255,255,0.5),0.1rem 0.1rem 1.5rem rgba(70,70,70,0.13);
+}
+.container{
+    width: 35rem;
+    height: 55rem;
+    /* background-image:url('img/c.jpg') ; */
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);
+    padding: 3rem;
+    border-radius: 2rem;
+    align-items: center;
+    text-align: center;
+    background-color: #f0ecec;
+}
+.image{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+    border-radius: 50%;
+    /* border: 15px solid rgb(255, 254, 254);
+    box-shadow:  inset  -2.2rem -3rem 0.5rem #b6b4b4,
+    inset -2.2rem -3rem 0.5rem #616060; */
+}
+.container #title{
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+  color: #171717;
+  margin: 2rem 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+
+.container #artist{
+    color: #af6a6a;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.img_container{
+  width: 25rem;
+  height: 25rem;
+  margin: auto;
+  border-radius: 50%;
+  border: 10px solid rgb(252, 250, 250);
+  box-shadow:  inset  2.3rem 1.3rem 3.5rem #f3efef,
+  inset 1.3rem 1.3rem 3.5rem #fdfafa;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow:  0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
+}
+.music_controls{
+    width: 20rem;
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.music_controls .fas{
+    color: #111111;
+    font-size: 3rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
+.music_controls .main_btn{
+    border-radius: 50%;
+    font-size: 3.4rem;
+    color: #111010;
+}
+.music_controls .fas:hover{
+    color: rgb(155, 44, 44);
+}
+.music_controls .fa-play-circle:hover{
+    color:rgb(155, 44, 44);
+    border-radius: 50%;
+    border-color: rgb(155, 44, 44);
+    background-color: #171717; 
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,0.6);
+}
+.music_controls title{
+    font-size: 2rem;
+     font-weight: bold;
+}
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+
+}
+
+@keyframes rotatePlayer {
+    from{
+     transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+}
